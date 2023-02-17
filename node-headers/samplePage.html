@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Page</title>
+</head>
+<body>
+  Redirecting....
+  <form id="form" action="http://localhost:3001/testPost" method="POST">
+    <input type="hidden" name="name" value="Carmen Electron" /> 
+    <input type="hidden" name="id1" value="1" /> 
+    <input type="hidden" name="id2" value="2" /> 
+    <input type="hidden" name="id3" value="3" /> 
+    <input type="hidden" name="id4" value="4" /> 
+  </form>
+
+  <script>
+    window.addEventListener("load", (event) => {
+      document.getElementById('form').submit()
+    });
+  </script>
+</body>
+</html>
