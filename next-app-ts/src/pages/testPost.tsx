@@ -30,7 +30,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   
   return {
     props: {
-      session: buf.toString('utf-8')
+      session: buf.toString('utf-8'),
+      packet
     }
   }
 }
